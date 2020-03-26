@@ -1,18 +1,24 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ElmApp :app="app" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ElmApp from './components/ElmApp.vue'
+import { Elm } from './Main.elm'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ElmApp
+  },
+  data() {
+    return {
+      app: Elm.Main
+    }
+  },
 }
 </script>
 
