@@ -1,5 +1,7 @@
 # counter-app
 
+Experiment to embeded Elm application into Vue component.
+
 ## Project setup
 ```
 yarn install
